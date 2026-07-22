@@ -1,0 +1,53 @@
+{
+  "python": "3.12.10",
+  "sklearn": "1.9.0",
+  "numpy": "2.5.1",
+  "pandas": "3.0.3",
+  "joblib": "1.5.3",
+  "random_state": 42,
+  "split": "chronological: Jun-Jul train, Aug-Sep test",
+  "hyperparameters": {
+    "ccp_alpha": 0.005,
+    "max_depth": 5,
+    "min_samples_leaf": 5
+  },
+  "hyperparameters_source": "fixed (chosen once on CV; never re-tuned)",
+  "test_roc_auc": 0.7096002252252253,
+  "test_roc_auc_ci": [
+    0.6199894428155209,
+    0.7976517886264095
+  ],
+  "test_pr_auc": 0.7564233857244461,
+  "test_pr_auc_ci": [
+    0.6516671638518704,
+    0.8452546923727501
+  ],
+  "test_recall": 0.8648648648648649,
+  "test_precision": 0.7441860465116279,
+  "test_confusion_matrix": [
+    [
+      26,
+      22
+    ],
+    [
+      10,
+      64
+    ]
+  ],
+  "leave_one_region_out_roc_auc": {
+    "Bejaia": 0.5711595372612323,
+    "Sidi-Bel Abbes": 0.477340488968396
+  },
+  "base_rate": 0.5637860082304527,
+  "train_fire_rate": 0.5206611570247934,
+  "test_fire_rate": 0.6065573770491803,
+  "n_train": 121,
+  "n_test": 122,
+  "n_total": 243,
+  "weather_source": "Open-Meteo daily aggregates (ERA5 archive for training)",
+  "calibrated": false,
+  "calibration_note": "n~63 fires in test makes isotonic fragile; balanced tree ~calibrated -> not applied",
+  "audit_ffmc_threshold_acc": null,
+  "audit_fwi_threshold_acc": null,
+  "audit_ceiling": null
+}

@@ -1,0 +1,10 @@
+# Deployment dependencies (app.py runtime only) -- exact pins read from the build env
+# (Python 3.12.10). On Streamlit Community Cloud select Python 3.12 in Advanced settings so
+# the pickle is read on the version it was written with. matplotlib is intentionally absent:
+# the app shows pre-rendered PNGs via st.image; interactive charts use st.line_chart.
+streamlit==1.59.2
+scikit-learn==1.9.0
+pandas==3.0.3
+numpy==2.5.1
+joblib==1.5.3
+requests==2.34.2

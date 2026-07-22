@@ -1,0 +1,10 @@
+# Development: everything needed to rebuild the model and re-run the audits.
+-r requirements.txt
+
+# training + audit figures
+matplotlib==3.11.1
+
+# optional notebook toolchain
+jupyter
+nbconvert
+ipykernel

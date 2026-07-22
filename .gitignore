@@ -1,0 +1,17 @@
+# virtualenv / caches
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# live forecast cache (regenerated on demand)
+data/live_cache/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+
+# NOTE: models/, *.joblib, data/*.csv and figures/*.png are DELIBERATELY tracked --
+# the bundle, the audit CSVs and the pre-rendered figures must ship with the repo or the
+# deployed app has no model and no audit. Do not add them here.
